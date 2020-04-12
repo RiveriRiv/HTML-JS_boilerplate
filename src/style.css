@@ -1,3 +1,114 @@
-div {
-  color: blue;
+#todo {
+	display: flex;
+	padding: 10px;
+}
+
+#box1 {
+	order:1;
+	flex-grow: 1;
+	padding-left: 60px;
+}
+
+#box2 {
+	order:2;
+	flex-grow: 1;
+	padding-left: 120px;
+}
+
+li {
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	width: 400px;
+	padding: 10px;
+	list-style: none;
+}
+
+#sortOpen, #sortDone, select:focus, #search, #task, input {
+	border: 0;
+	outline: none;
+}
+
+#sortOpen, #sortDone {
+	border-bottom: 1px solid #CCC;
+}
+
+#sortOpen {
+	margin-left: 240px;
+}
+
+#sortDone {
+	margin-left: 265px;
+}
+
+#todo, #search {
+	background-color: #1E90FF;
+}
+
+#search {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#task {
+	border-bottom: 1px solid #CCC;
+}
+
+#search::placeholder, #todoList {
+	color: #FFFFFF;
+}
+
+#container {
+	border: 1px solid #CCC;
+	width: 600px;
+}
+
+button {
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#doneDiv, #openDiv, .addTask {
+	padding-left: 80px;
+}
+
+.addTask {
+	padding-top: 20px;
+}
+
+#doneDiv,  #openDiv {
+	padding-top: 20px;
+}
+
+ul {
+	padding: 0px;
+}
+
+#clearOpenList, #clearDoneList {
+	text-decoration:underline;
+	margin-left: 305px;
+	border: 0;
+}
+
+#clearOpenList:active, #clearDoneList:active, #clearOpenList:focus, #clearDoneList:focus {
+	border: 0;
+	outline: none;
+}
+
+#clearOpenList:active, #clearDoneList:active {
+	color: blue;
+}
+
+#task {
+	width: 350px;
+}
+
+li {
+	display: flex;
+	height: 30px;
+}
+
+.dates {
+	margin-left: 70px;
 }

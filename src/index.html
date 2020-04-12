@@ -1,10 +1,56 @@
 <!DOCTYPE html>
   <head>
-    <title>HTML + JS boilerplate project</title>
+    <title>Final Task</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-    <div>Hello, world</div>
+    <div id="container">
+		<div id="todo">
+			<div id="box1">
+				<span id="todoList">Todo List</span>
+		    </div>
+			<div id="box2">
+				<input type="text" id="search" placeholder="Search...                        &#128269">
+			</div>
+		</div>
+
+		<div>
+			<form class="addTask">
+				<input type="text" id="task" placeholder="New task...">
+				<button type="submit" id="add">ADD</button>
+			</form>
+		</div>
+
+		<div id="openDiv">
+		<span>Open</span>
+			<select id="sortOpen">
+				<option selected class="creationDate asc">Date creation (Asc)</option>
+				<option class="creationDate desc">Date creation (Desc)</option>
+				<option class="records asc">Records (Asc)</option>
+				<option class="records desc">Records (Desc)</option>
+			</select>
+
+			<ul id="open">
+			</ul>
+
+			<button type="submit" id="clearOpenList">Clear "Open" list</button>
+		</div>
+
+		<div id="doneDiv">
+			<span>Done</span>
+			<select id="sortDone">
+				<option selected class="dueDate asc">Due date (Asc)</option>
+				<option class="dueDate desc">Due date (Desc)</option>
+				<option class="records asc">Records (Asc)</option>
+				<option class="records desc">Records (Desc)</option>
+			</select>
+
+			<ul id="done">
+			</ul>
+
+			<button type="submit" id="clearDoneList">Clear "Done" list</button>
+		</div>
+	</div>
   </body>
 </html>
